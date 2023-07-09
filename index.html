@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(68, 68, 133);
+            color: rgb(239, 231, 231);
+            font-family: 'PT Serif', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(44, 32, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: rgb(235, 230, 223);
+            color: rgb(236, 228, 228);
+        }
+
+        nav ul li a:hover {
+            color: rgb(81, 81, 109);
+            font-size: 1.8;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+            align-items: center;
+        }
+
+        .firstSection div {
+            width: 60%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 70px;
+        }
+
+        .leftSection .button {
+            padding: 70px 0;
+            left: -20px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(50, 59, 113);
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn1 {
+            padding: 12px;
+            background-color: rgb(50, 59, 113);
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+
+        .rightSection img {
+            width: 100%;
+            margin: -50px;
+
+        }
+
+        .purple {
+            color: rgb(177, 117, 233);
+        }
+
+        .text-gray {
+            color: rgb(182, 172, 172);
+            font-size: 1.6rem;
+        }
+
+        #element {
+            color: rgb(171, 109, 229);
+        }
+
+        .about-me {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .about-me h2 {
+            font-size: 24px;
+            color: #e8dfdf;
+        }
+
+        .about-me img {
+            width: 250px;
+            height: 270px;
+            border: rgb(10, 10, 10);
+            border-radius: 30%;
+            margin: 40px 0;
+        }
+
+        .about-me p {
+            font-size: 16px;
+            color: #d9d0d0;
+        }
+         
+    .skills-section {
+    padding: auto;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.skill {
+    text-align: center;
+    background-color: #422d81;
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 17px;
+    font-weight:800;
+    margin-bottom: 10px;
+}
+
+.skill-icons {
+    font-size: 32px;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    margin-bottom: 1px;
+}
+
+.fa-code,
+.fa-book,
+.fa-cogs,
+.fa-rocket,
+.fa-android,
+.fa-globe,
+.fa-chart-bar,
+.fa-link,
+.fa-salesforce {
+    color: #b79f9f;
+}       
+
+        footer {
+            background-color: rgb(42, 6, 75);
+            height: 300px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 30px 132px;
+        }
+
+        footer .footer-text-rights {
+            text-align: center;
+            color: rgb(108, 108, 108);
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhumika's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Project.html">Internship</a></li>
+                    <li><a href="Contact.html">Contact Me</a></li>
+                    
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello!
+                <br>My name is <span class="purple"> Bhumika Trivedi</span>
+                <br>
+                <div>I am a </div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="https://drive.google.com/file/d/1P06ZEoYYN4r42Flydamr8OgX7kYPWosv/view?usp=sharing" target="_blank" download>
+                        <button class="btn">Download Resume</button>
+                      </a>
+                    <button class="btn1" onclick="window.location.href = 'https://github.com/Bhumi-13';">Visit Github</button>
+
+
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg-png.webp" alt="">
+            </div>
+        </section>
+        <h1 id="About"></h1>
+        <section class ="About">
+            <hr>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <img src="bhumi 1.jpg" alt="Profile Picture">
+                <p>I am an EC student studing in Shri Ramdeobaba College of Engineering and Mangaement
+                    in Nagpur.
+                    <br>Firstly, I learn how to solve practical life problems using Software Technologies through codes.
+                    I thrive on challenges
+                    and constantly set goals for myself, so I have something to strive toward. I'm always looking for an
+                    opportunity to do
+                    better.
+                </p>
+            </div>
+
+        </section>
+
+       
+        <section class="skills-section">
+            <hr>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="skill-name">Programming</div>
+                    <div class="skill-icons">
+                        <i class="fab fa-code"></i>
+                    </div>
+                    <div class="skill-list">
+                        <ul>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Coursework</div>
+                    <div class="skill-icons">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="skill-list">
+                        <ul>
+                            <li>Data Structures</li>
+                            <li>DBMS</li>
+                            <li>OOPS</li>
+                            <li>Computer Networks</li>
+                            <li>Design and Analysis of Algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">RESTful APIs</div>
+                    <div class="skill-icons">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="skill-list">
+                        <ul>
+                            <li>API Design</li>
+                            <li>API Integration</li>
+                            <li>API Testing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Code Optimization</div>
+                    <div class="skill-icons">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Android Development</div>
+                    <div class="skill-icons">
+                        <i class="fab fa-android"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Web Development</div>
+                    <div class="skill-icons">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Power BI</div>
+                    <div class="skill-icons">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Basics of Blockchain Development</div>
+                    <div class="skill-icons">
+                        <i class="fas fa-link"></i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Salesforce</div>
+                    <div class="skill-icons">
+                        <i class="fab fa-salesforce"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_first">
+                <h3>Bhumika's Portfolio</h3>
+            </div>
+            <div class="footer-Second">
+                
+            </div>
+            <div class="footer-Third"></div>
+            <div class="footer-Fourth"></div>
+        </div>
+        <div class="footer-text-rights">
+            <ul class="social-icons">
+                <li><a href="https://twitter.com/bhumii_13?t=Cc6ywVnEdBMUVh9gVXgSPQ&s=09"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com/bhumitrivedi._?igshid=NGExMmI2YTkyZg=="><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/bhumika-trivedi-b19b35245/"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            Copyrights &#169 www.bhumikasportfolio.com | All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Coder','Web Developer', 'Java Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
